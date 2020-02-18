@@ -7,21 +7,13 @@
   <title>Home</title>
   <link href="index.css" rel="stylesheet">
   <!-- Favicon -->
-  <link rel="icon" href="./public/favicon.ico">
+  <link rel="icon" href="./scr/favicon.ico">
 
-  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="index.js"></script>
 </head>
 
 <body>
-
-  <!-- Header Area Start -->
-  <header class="header-area">
-      <div class="header">
-         <h2>Welcome to my homepage!</h2>
-         <p>Alex Mahon - Fullstack Developer</p>
-      </div>
-   </header>
 
    <ul id="nav">
        <li><a href="https://alexmahon.dev">Home</a></li>
@@ -41,17 +33,123 @@
        <div class="clr"></div>
    </ul>
 
-   <h3>Sticky Navigation Bar Example</h3>
-   <p>The navbar will <strong>stick</strong> to the top when you reach its scroll position.</p>
-   <p><strong>Note:</strong> Internet Explorer, Edge 15 and earlier versions do not support sticky positioning. Safari requires a -webkit- prefix.</p>
-   <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-   <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-   <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-   <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-   <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-   <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-   <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+   <img id="picture" src="./scr/pic.jpg" alt="Playing guitar">
+   <div class="padding">
+      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search tabs...">
+      <ul id="myUL">
 
+         <li><a onclick="toggle_visibility('kazuki1')">Kazuki 1</a>
+         <iframe id="kazuki1" style="display:none;" src="./scr/kazuki-1.pdf" width="67%" height="1365px"></iframe>
+         <li><a onclick="toggle_visibility('kazuki2')">Kazuki 2</a>
+         <iframe id="kazuki2" style="display:none;" src="./scr/kazuki-2.pdf" width="67%" height="1365px"></iframe>
+         <li><a onclick="toggle_visibility('kazuki3')">Kazuki 3</a>
+         <iframe id="kazuki3" style="display:none;" src="./scr/kazuki-3.pdf" width="67%" height="1365px"></iframe>
+         <li><a onclick="toggle_visibility('kazuki4')">Kazuki 4</a>
+         <iframe id="kazuki4" style="display:none;" src="./scr/kazuki-4.pdf" width="67%" height="1365px"></iframe>
+         <li><a onclick="toggle_visibility('kazuki5')">Kazuki 5</a>
+         <iframe id="kazuki5" style="display:none;" src="./scr/kazuki-5.pdf" width="67%" height="1365px"></iframe>
+
+         <li><a onclick="toggle_visibility('kazuki6')">Kazuki 6</a>
+         <iframe id="kazuki6" style="display:none;" src="./scr/kazuki-6.pdf" width="67%" height="1365px"></iframe>
+         <li><a onclick="toggle_visibility('kazuki7')">Kazuki 7</a>
+         <iframe id="kazuki7" style="display:none;" src="./scr/kazuki-7.pdf" width="67%" height="1365px"></iframe>
+         <li><a onclick="toggle_visibility('kazuki8')">Kazuki 8</a>
+         <iframe id="kazuki8" style="display:none;" src="./scr/kazuki-8.pdf" width="67%" height="1365px"></iframe>
+         <li><a onclick="toggle_visibility('kazuki9')">Kazuki 9</a>
+         <iframe id="kazuki9" style="display:none;" src="./scr/kazuki-9.pdf" width="67%" height="1365px"></iframe>
+         <li><a onclick="toggle_visibility('kazuki10')">Kazuki 10</a>
+         <iframe id="kazuki10" style="display:none;" src="./scr/kazuki-10.pdf" width="67%" height="1365px"></iframe>
+
+         <li><a onclick="toggle_visibility('kazuki11')">Kazuki 11</a>
+         <iframe id="kazuki11" style="display:none;" src="./scr/kazuki-11.pdf" width="67%" height="1365px"></iframe>
+         <li><a onclick="toggle_visibility('kazuki12')">Kazuki 12</a>
+         <iframe id="kazuki12" style="display:none;" src="./scr/kazuki-12.pdf" width="67%" height="1365px"></iframe>
+         <li><a onclick="toggle_visibility('kazuki13')">Kazuki 13</a>
+         <iframe id="kazuki13" style="display:none;" src="./scr/kazuki-13.pdf" width="67%" height="1365px"></iframe>
+         <li><a onclick="toggle_visibility('kazuki14')">Kazuki 14</a>
+         <iframe id="kazuki14" style="display:none;" src="./scr/kazuki-14.pdf" width="67%" height="1365px"></iframe>
+         <li><a onclick="toggle_visibility('kazuki15')">Kazuki 15</a>
+         <iframe id="kazuki15" style="display:none;" src="./scr/kazuki-15.pdf" width="67%" height="1365px"></iframe>
+
+         <li><a onclick="toggle_visibility('kazuki16')">Kazuki 16</a>
+         <iframe id="kazuki16" style="display:none;" src="./scr/kazuki-16.pdf" width="67%" height="1365px"></iframe>
+         <li><a onclick="toggle_visibility('kazuki17')">Kazuki 17</a>
+         <iframe id="kazuki17" style="display:none;" src="./scr/kazuki-17.pdf" width="67%" height="1365px"></iframe>
+         <li><a onclick="toggle_visibility('kazuki18')">Kazuki 18</a>
+         <iframe id="kazuki18" style="display:none;" src="./scr/kazuki-18.pdf" width="67%" height="1365px"></iframe>
+         <li><a onclick="toggle_visibility('kazuki19')">Kazuki 19</a>
+         <iframe id="kazuki19" style="display:none;" src="./scr/kazuki-19.pdf" width="67%" height="1365px"></iframe>
+         <li><a onclick="toggle_visibility('kazuki20')">Kazuki 20</a>
+         <iframe id="kazuki20" style="display:none;" src="./scr/kazuki-20.pdf" width="67%" height="1365px"></iframe>
+
+         <li><a onclick="toggle_visibility('kazuki21')">Kazuki 21</a>
+         <iframe id="kazuki21" style="display:none;" src="./scr/kazuki-21.pdf" width="67%" height="1365px"></iframe>
+         <li><a onclick="toggle_visibility('kazuki22')">Kazuki 22</a>
+         <iframe id="kazuki22" style="display:none;" src="./scr/kazuki-22.pdf" width="67%" height="1365px"></iframe>
+         <li><a onclick="toggle_visibility('kazuki23')">Kazuki 23</a>
+         <iframe id="kazuki23" style="display:none;" src="./scr/kazuki-23.pdf" width="67%" height="1365px"></iframe>
+         <li><a onclick="toggle_visibility('kazuki24')">Kazuki 24</a>
+         <iframe id="kazuki24" style="display:none;" src="./scr/kazuki-24.pdf" width="67%" height="1365px"></iframe>
+         <li><a onclick="toggle_visibility('kazuki25')">Kazuki 25</a>
+         <iframe id="kazuki25" style="display:none;" src="./scr/kazuki-25.pdf" width="67%" height="1365px"></iframe>
+
+         <li><a onclick="toggle_visibility('kazuki26')">Kazuki 26</a>
+         <iframe id="kazuki26" style="display:none;" src="./scr/kazuki-26.pdf" width="67%" height="1365px"></iframe>
+         <li><a onclick="toggle_visibility('kazuki27')">Kazuki 27</a>
+         <iframe id="kazuki27" style="display:none;" src="./scr/kazuki-27.pdf" width="67%" height="1365px"></iframe>
+         <li><a onclick="toggle_visibility('kazuki28')">Kazuki 28</a>
+         <iframe id="kazuki28" style="display:none;" src="./scr/kazuki-28.pdf" width="67%" height="1365px"></iframe>
+         <li><a onclick="toggle_visibility('kazuki29')">Kazuki 29</a>
+         <iframe id="kazuki29" style="display:none;" src="./scr/kazuki-29.pdf" width="67%" height="1365px"></iframe>
+         <li><a onclick="toggle_visibility('kazuki30')">Kazuki 30</a>
+         <iframe id="kazuki30" style="display:none;" src="./scr/kazuki-30.pdf" width="67%" height="1365px"></iframe>
+
+         <li><a onclick="toggle_visibility('kazuki31')">Kazuki 31</a>
+         <iframe id="kazuki31" style="display:none;" src="./scr/kazuki-31.pdf" width="67%" height="1365px"></iframe>
+         <li><a onclick="toggle_visibility('kazuki32')">Kazuki 32</a>
+         <iframe id="kazuki32" style="display:none;" src="./scr/kazuki-32.pdf" width="67%" height="1365px"></iframe>
+         <li><a onclick="toggle_visibility('kazuki33')">Kazuki 33</a>
+         <iframe id="kazuki33" style="display:none;" src="./scr/kazuki-33.pdf" width="67%" height="1365px"></iframe>
+         <li><a onclick="toggle_visibility('kazuki34')">Kazuki 34</a>
+         <iframe id="kazuki34" style="display:none;" src="./scr/kazuki-34.pdf" width="67%" height="1365px"></iframe>
+         <li><a onclick="toggle_visibility('kazuki35')">Kazuki 35</a>
+         <iframe id="kazuki35" style="display:none;" src="./scr/kazuki-35.pdf" width="67%" height="1365px"></iframe>
+
+         <li><a onclick="toggle_visibility('kazuki36')">Kazuki 36</a>
+         <iframe id="kazuki36" style="display:none;" src="./scr/kazuki-36.pdf" width="67%" height="1365px"></iframe>
+         <li><a onclick="toggle_visibility('kazuki37')">Kazuki 37</a>
+         <iframe id="kazuki37" style="display:none;" src="./scr/kazuki-37.pdf" width="67%" height="1365px"></iframe>
+         <li><a onclick="toggle_visibility('kazuki38')">Kazuki 38</a>
+         <iframe id="kazuki38" style="display:none;" src="./scr/kazuki-38.pdf" width="67%" height="1365px"></iframe>
+         <li><a onclick="toggle_visibility('kazuki39')">Kazuki 39</a>
+         <iframe id="kazuki39" style="display:none;" src="./scr/kazuki-39.pdf" width="67%" height="1365px"></iframe>
+         <li><a onclick="toggle_visibility('kazuki40')">Kazuki 40</a>
+         <iframe id="kazuki40" style="display:none;" src="./scr/kazuki-40.pdf" width="67%" height="1365px"></iframe>
+
+         <li><a onclick="toggle_visibility('kazuki41')">Kazuki 41</a>
+         <iframe id="kazuki41" style="display:none;" src="./scr/kazuki-41.pdf" width="67%" height="1365px"></iframe>
+         <li><a onclick="toggle_visibility('kazuki42')">Kazuki 42</a>
+         <iframe id="kazuki42" style="display:none;" src="./scr/kazuki-42.pdf" width="67%" height="1365px"></iframe>
+         <li><a onclick="toggle_visibility('kazuki43')">Kazuki 43</a>
+         <iframe id="kazuki43" style="display:none;" src="./scr/kazuki-43.pdf" width="67%" height="1365px"></iframe>
+         <li><a onclick="toggle_visibility('kazuki44')">Kazuki 44</a>
+         <iframe id="kazuki44" style="display:none;" src="./scr/kazuki-44.pdf" width="67%" height="1365px"></iframe>
+         <li><a onclick="toggle_visibility('kazuki45')">Kazuki 45</a>
+         <iframe id="kazuki45" style="display:none;" src="./scr/kazuki-45.pdf" width="67%" height="1365px"></iframe>
+
+         <li><a onclick="toggle_visibility('kazuki46')">Kazuki 46</a>
+         <iframe id="kazuki46" style="display:none;" src="./scr/kazuki-46.pdf" width="67%" height="1365px"></iframe>
+         <li><a onclick="toggle_visibility('kazuki47')">Kazuki 47</a>
+         <iframe id="kazuki47" style="display:none;" src="./scr/kazuki-47.pdf" width="67%" height="1365px"></iframe>
+         <li><a onclick="toggle_visibility('kazuki48')">Kazuki 48</a>
+         <iframe id="kazuki48" style="display:none;" src="./scr/kazuki-48.pdf" width="67%" height="1365px"></iframe>
+         <li><a onclick="toggle_visibility('kazuki49')">Kazuki 49</a>
+         <iframe id="kazuki49" style="display:none;" src="./scr/kazuki-49.pdf" width="67%" height="1365px"></iframe>
+         <li><a onclick="toggle_visibility('kazuki50')">Kazuki 50</a>
+         <iframe id="kazuki50" style="display:none;" src="./scr/kazuki-50.pdf" width="67%" height="1365px"></iframe>
+
+      </ul>
+   </div>
    <footer class="contact-area">
       <div id="contact-info">
          <ul id="contacts-list">
