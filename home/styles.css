@@ -1,0 +1,22 @@
+body, html {
+    height: 100%;
+  }
+  
+  .bg { 
+    /* The image used */
+    background-image: url("./luxembourg.jpg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .mainbox {
+    padding-bottom: 15px;
+    background: rgba(255, 255, 255, 0.65);
+    border-radius: 7px;
+  }
